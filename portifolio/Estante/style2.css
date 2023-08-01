@@ -1,0 +1,141 @@
+html {
+    /*Suavização do scroll*/
+    scroll-behavior:smooth;
+}
+
+/*CORPO DA APLICAÇÃO*/
+body {
+    /*background*/
+    background-color: #f2e7dc;
+    /*texto*/
+    color: #0d0d0d;
+    text-align: justify;
+    /*alinhamento e tamanho*/
+    /*1 rem = 16 px, tela grande = font-size 16 px, tela media = font-size: 15 px, tela pequena font-size: 14px*/
+    width: 95%;
+    margin: auto;
+}
+section{
+    /*espaçamento*/
+    /* padding-left: 256px;
+    padding-right: 256px;
+    padding-bottom: 64px;
+    padding-top: 64px; */
+    /*outra forma mais simples de definir padding*/
+    padding: 64px 256px;
+    /* colocar quatro elementos: top right bottom left*/
+    /*colocar dois elementos: top/bottom e right/left*/
+}
+
+/*TABELA*/
+table {
+    /*largura*/
+    width: 100%;
+}
+    /*cabeçalho*/
+td {
+    /*background*/
+    background-color: #A9D9D0;
+}
+    /*td = célula com dado; td = célula cabeçalho*/
+td,
+th {
+    /*borda formato short-hand*/
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: #000; */
+    /*ou resumindo*/
+    border: #000 solid 1px;
+    border-radius: 4px;
+    text-align: center;
+}
+    /*tr linha de células*/
+tr {
+    background-color: #038C7F;
+}
+
+/*Título, texto e parágrafos*/
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+h3 {
+    color: #000;
+}
+
+/*LINK*/
+a:link {
+    /*Cor padrão*/
+    color: #f2e7dc;
+}
+a:visited {
+    /*cor após visitar*/
+    color: #95bfb8;
+}
+a:hover{
+    /*passa mouse por cima*/
+    color: #025454;
+}
+a:active{
+    /*quando selecionamos/pressionamos link*/
+    color: #0d0d0d;
+}
+
+/*IMAGEM*/
+img {
+    width: 300px;
+    /*display serve para formatar a tag, block = em "caixa", não escapa o conteudo de dentro*/
+    display: block; /*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são.*/
+    margin: auto;
+    border-radius: 50px;
+}
+
+/*CLASSES E IDS*/
+.bookTitle {
+    background-color: #a9d9d0;
+    color: #027373;
+    text-align: center;
+}
+/* <!--fazer seção sim e seção nao--> */
+#sectionHP,
+#sectionHer,
+#sectionCont,
+#sectionNao,
+#sectionApr {
+    background-color: #A9D9D0;
+}
+#header{
+    background-color: #038c7f;
+    color: #f2e7dc;
+    padding: 20px; /*só 1 elemento define os 4 lados*/
+    margin-bottom: 0px;
+}
+#yourLibrary{
+    text-indent: 0px;
+    text-align: center;
+    /* Dá pra usar um !important após uma definição caso continue herdando outros recursos -- mas não é recomendado*/
+}
+#summary{
+    background-color: #038c7f;
+    color: #f2e7dc;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 0 0 50px 50px;
+
+    display: flex; /*visualizar itens um ao lado do outro*/
+    flex-direction: column; /*itens ficam um abaixo do outro, só funciona se definir o display*/
+    align-items: center; /*alinha todos os itens pro centro*/
+}
+
+/*RODAPÉ*/
+footer{
+    background-color: #038c7f;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
